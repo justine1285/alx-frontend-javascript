@@ -1,6 +1,5 @@
-import ClassRoom from './0-classroom';
-
-export default function initializeRooms() {
-  return [19, 20, 34].map((value) => new ClassRoom(value));
+export default class ClassRoom {
+  constructor(maxStudentsSize) {
+    this._maxStudentsSize = maxStudentsSize;
+  }
 }
-
